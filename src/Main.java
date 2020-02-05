@@ -7,15 +7,13 @@ public class Main {
         Scanner in = new Scanner(System.in);
         Bakery bakery = new Bakery();
 
-
         System.out.println("Welcome to the ACJ Better Bakery App!" +
-
-                "\nOur products contain: [peanuts, gluten, soy, dairy] ");
+                "\nOur products contain: [peanut, gluten, soy, dairy] ");
         System.out.println();
         System.out.print("To search for foods that you can eat, please enter the name of the dietary restriction:" +
                 "\nTo see a list of all our foods, please type \"all\". ");
         String search = in.nextLine();
 
 
-    }
+
 }
