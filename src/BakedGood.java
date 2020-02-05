@@ -5,7 +5,7 @@ public class BakedGood {
     private String name;
     private double price;
     private Date expDate;
-    private String[] dietRest;
+    private String [] dietRest;
     private int quantity;
 
     private ArrayList<String> allergies;
@@ -13,7 +13,7 @@ public class BakedGood {
     public BakedGood() {
 
     }
-    public BakedGood(String name, double price, Date expDate, String[] dietRest, int quantity){
+    public BakedGood(String name, double price, Date expDate, String [] dietRest, int quantity){
         this.name = name;
         this.price = price;
         this.expDate = expDate;
@@ -38,10 +38,10 @@ public class BakedGood {
     public void setExpDate(Date expDate){
         this.expDate = expDate;
     }
-    public String[] getDietRest(){
+    public String [] getDietRest(){
         return this.dietRest;
     }
-    public void setDietRest(String[] dietRest){
+    public void setDietRest(String [] dietRest){
         this.dietRest = dietRest;
     }
 }
