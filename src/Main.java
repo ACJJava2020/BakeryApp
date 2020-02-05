@@ -6,6 +6,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
+
         System.out.println("Welcome to the Brookley's Better Bakery App!" +
                 "\nOur products contain: [peanuts, gluten, soy, dairy] ");
         System.out.println();
