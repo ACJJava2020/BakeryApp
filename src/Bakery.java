@@ -37,13 +37,15 @@ public class Bakery {
     }
 
     // Fins all goods in the array list that don't contain the allergies of the user
-    public String findBakedGoods(String input) {
+    public void findBakedGoods(String input) {
         String[] inputArray = input.split(" ");
-        for(int i = 0; i < bgList.size(); i++){
-            if (bgList.get(i).getDietRest()[i].equals("gluten") || bgList.get(i).getDietRest()[i].equals("peanut") || bgList.get(i).getDietRest()[i].equals("soy")){
-                return bgList.get(i).getName();
+        ArrayList<String> search = new ArrayList<>();
+        for (BakedGood bakedGood : bgList) {
+            for (int j = 0; j < bakedGood.getDietRest().length; j++) {
+                if (!bakedGood.getDietRest().equals(bakedGood.getDietRest()[j])) {
+                    System.out.println(bakedGood.getName());
+                }
             }
         }
-
     }
 }

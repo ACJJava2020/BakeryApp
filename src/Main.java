@@ -16,5 +16,9 @@ public class Main {
                 "\nTo see a list of all our foods, please type \"all\". ");
         String search = in.nextLine();
 
+        Bakery b = new Bakery();
+        b.findBakedGoods(search);
+
+
     }
 }
