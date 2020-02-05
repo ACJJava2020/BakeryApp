@@ -1,5 +1,3 @@
-import com.sun.xml.internal.fastinfoset.util.StringArray;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -32,6 +30,10 @@ public class Bakery {
         bgList.add(new BakedGood("GINGERBREAD HOUSE KIT", 2.50,new Date(), new String[] {"gluten","peanut","soy"}, 35 ) );
     }
 
+
+    // Fins all goods in the array list that don't contain the allergies of the user
+    public void findBakedGoods(String input) {
+
     // Finds all goods in the array list that don't contain the allergies of the user
     // Returns all baked goods if user inputs all
     public String findBakedGoods(String input) {
@@ -58,7 +60,8 @@ public class Bakery {
                 }
             }
 
+
         }
-        return bakedGoods;
+
     }
 }

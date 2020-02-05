@@ -13,7 +13,7 @@ public class Main {
         System.out.print("To search for foods that you can eat, please enter the name of the dietary restriction:" +
                 "\nTo see a list of all our foods, please type \"all\". ");
         String search = in.nextLine();
-        bakery.addBakedGoods();
-        System.out.println(bakery.findBakedGoods(search));
-    }
+
+
+
 }
