@@ -1,5 +1,3 @@
-import com.sun.xml.internal.fastinfoset.util.StringArray;
-
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -38,14 +36,6 @@ public class Bakery {
 
     // Fins all goods in the array list that don't contain the allergies of the user
     public void findBakedGoods(String input) {
-        String[] inputArray = input.split(" ");
-        ArrayList<String> search = new ArrayList<>();
-        for (BakedGood bakedGood : bgList) {
-            for (int j = 0; j < bakedGood.getDietRest().length; j++) {
-                if (!bakedGood.getDietRest().equals(bakedGood.getDietRest()[j])) {
-                    System.out.println(bakedGood.getName());
-                }
-            }
-        }
+
     }
 }
