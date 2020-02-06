@@ -11,9 +11,13 @@ public class Main {
                 "\nOur products contain: [peanut, gluten, soy, dairy] ");
         System.out.println();
         System.out.print("To search for foods that you can eat, please enter the name of the dietary restriction:" +
-                "\nTo see a list of all our foods, please type \"all\". ");
+                "\nEnter a space between each dietary restriction.\nTo see a list of all our foods, please type \"all\". ");
         String search = in.nextLine();
 
+        bakery.addBakedGoods();
+        System.out.println(bakery.findBakedGoods(search));
 
+        in.close();
+    }
 
 }
